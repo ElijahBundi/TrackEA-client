@@ -55,6 +55,8 @@ function Hero() {
       <Box
         sx={{
           backgroundImage: `url(${home})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
           flex: 1,
           // height: "768px",
           // width: "512px",
