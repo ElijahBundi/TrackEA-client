@@ -60,8 +60,7 @@ function Hero() {
           flex: 1,
           // height: "768px",
           // width: "512px",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundPosition: "center",          
         }}
       />
     </Box>
