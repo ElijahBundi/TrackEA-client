@@ -6,7 +6,10 @@ import Start from "../../Assets/Start.png";
 function ShouldYouStart() {
   return (
     <Box
-      sx={{
+    sx={{bgcolor: '#e6dcc6',}}
+    >
+    <Box
+      sx={{        
         display: "flex",
         flexDirection: "row",
         padding: 7,
@@ -54,6 +57,7 @@ function ShouldYouStart() {
           by day progress that you might not otherwise notice.”
         </Typography>
       </Box>
+    </Box>
     </Box>
   );
 }
