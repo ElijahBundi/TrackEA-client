@@ -24,11 +24,11 @@ function FromOurClients() {
         <Typography variant="h2">From Our Clients</Typography>
       </Box>
       <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        gap: 13
-      }}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 13,
+        }}
       >
         <Box
           sx={{
@@ -41,7 +41,14 @@ function FromOurClients() {
           <PersonOutlineOutlinedIcon
             sx={{ color: "#e6dcc6", width: 80, height: 80 }}
           />
-          <Box>
+          <Box
+            sx={{
+              justifyContent: "space-between",
+              height: "235px",
+              display: "flex",
+              flexFlow: "column",
+            }}
+          >
             <Typography
               sx={{
                 width: 250,
@@ -80,7 +87,14 @@ function FromOurClients() {
           <PersonOutlineOutlinedIcon
             sx={{ color: "#e6dcc6", width: 80, height: 80 }}
           />
-          <Box>
+          <Box
+            sx={{
+              justifyContent: "space-between",
+              height: "235px",
+              display: "flex",
+              flexFlow: "column",
+            }}
+          >
             <Typography
               sx={{
                 width: 250,
@@ -89,9 +103,8 @@ function FromOurClients() {
                 fontSize: "18px",
               }}
             >
-              Espionage is light years ahead of their competition. I thought
-              going with the cheaper competitor would be my best option and I
-              was so wrong.
+              I discovered a couple of minutes after the purchase of XNSPY, that
+              Espionage has additional features that I would appreciate to have.
             </Typography>
             <Typography
               sx={{
@@ -119,7 +132,14 @@ function FromOurClients() {
           <PersonOutlineOutlinedIcon
             sx={{ color: "#e6dcc6", width: 80, height: 80 }}
           />
-          <Box>
+          <Box
+            sx={{
+              justifyContent: "space-between",
+              height: "235px",
+              display: "flex",
+              flexFlow: "column",
+            }}
+          >
             <Typography
               sx={{
                 width: 250,
@@ -128,9 +148,8 @@ function FromOurClients() {
                 fontSize: "18px",
               }}
             >
-              Espionage is light years ahead of their competition. I thought
-              going with the cheaper competitor would be my best option and I
-              was so wrong.
+              I wanted remote sound recording and they do not have it yet, but
+              generally it's the best tracking device so far.
             </Typography>
             <Typography
               sx={{
