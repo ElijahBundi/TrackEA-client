@@ -1,8 +1,8 @@
 import React from 'react'
+import NavBar from '../Navbar/Navbar'
 import About from './About'
 import FromOurClients from './FromOurClients'
 import GetInTouch from './GetInTouch'
-import Hero from './Hero'
 import Products from './Products'
 import ShouldYouStart from './ShouldYouStart'
 import WhyChooseUs from './WhyChooseUs'
@@ -10,7 +10,7 @@ import WhyChooseUs from './WhyChooseUs'
 function Home() {
   return (
     <>
-        <Hero />
+        <NavBar />
         <About />
         <Products />
         <WhyChooseUs />
