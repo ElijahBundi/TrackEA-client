@@ -6,16 +6,16 @@ import home from "../../Assets/About.jpg";
 function About() {
   return (
     <Box
-        sx={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.8)),url(${home})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            padding: '150px 50px',
-        }}
+    sx={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.8)),url(${home})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '150px 50px',
+    }}
     >
         <Box
             sx={{
