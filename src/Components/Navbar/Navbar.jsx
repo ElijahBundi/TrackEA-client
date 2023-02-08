@@ -144,7 +144,7 @@ function NavBar() {
           </List>
           <Divider />
           <List>
-            {["Dashboard", "Locations"].map((text, index) => (
+            {["Dashboard", "Sign Up/Login"].map((text, index) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>
