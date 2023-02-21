@@ -129,37 +129,7 @@ function Signup({ onLogin }) {
           {errors?.email}
         </Typography>
       )}
-      <TextField
-        select
-        size="small"
-        id="outlined-basic"
-        value={accountType}
-        label="Account Type"
-        placeholder="enter account type"
-        onChange={(e) => setAccountType(e.target.value)}
-        variant="outlined"
-        style={textFieldStyle}
-        fullWidth
-        required
-      >
-        <MenuItem value="Customer">
-          <option value="Customer">Customer</option>
-        </MenuItem>
-        <MenuItem value="Mover">
-          <option value="Mover">Mover</option>
-        </MenuItem>
-        <MenuItem value="Admin">
-          <option value="Admin">Admin</option>
-        </MenuItem>
-      </TextField>
-      {errors && errors && (
-        <Typography
-          fontSize="0.7rem"
-          color="red"
-        >
-          {errors?.type}
-        </Typography>
-      )}
+
       <TextField
         size="small"
         id="outlined-basic"
@@ -205,7 +175,7 @@ function Signup({ onLogin }) {
       <br /><br />
       <Button
         variant="contained"
-        color="error"
+        // color="error"
         type="submit"
         fullWidth
       >

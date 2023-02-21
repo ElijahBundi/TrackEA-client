@@ -8,6 +8,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import { amber } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import React from "react";
 import home from "../../Assets/About.jpg";
@@ -88,6 +89,9 @@ function Login() {
               fullWidth
               focused
               required
+              sx={{
+                color: "#e6dcc6",
+              }}
             />
             <TextField
               size="small"
@@ -103,7 +107,17 @@ function Login() {
               required
             />
             <FormControlLabel
-              control={<Checkbox defaultUnChecked />}
+              control={
+                <Checkbox
+                  sx={{
+                    color: amber[50],
+                    "&.Mui-checked": {
+                      color: amber[50],
+                    },
+                  }}
+                  defaultUnChecked
+                />
+              }
               label="Remember me"
             />
             <Button variant="contained" color="error" type="submit" fullWidth>
