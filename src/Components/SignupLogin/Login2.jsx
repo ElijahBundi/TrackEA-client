@@ -90,7 +90,7 @@ function Login({ onLogin, setLoading }) {
           label="Email"
           placeholder="enter email"
           onChange={(e) => setEmail(e.target.value)}
-          variant="outlined"
+          variant="filled"
           style={textFieldStyle}
           fullWidth
           required
@@ -104,7 +104,7 @@ function Login({ onLogin, setLoading }) {
           placeholder="enter password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
-          variant="outlined"
+          variant="filled"
           style={textFieldStyle}
           fullWidth
           required

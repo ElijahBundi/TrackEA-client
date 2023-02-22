@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 import Carousel from './Components/SignupLogin/Carousel';
 import Login from './Components/SignupLogin/Login';
@@ -29,6 +30,10 @@ function App() {
         <Route 
           path='signup'
           element={<Signup />}
+        /> 
+        <Route 
+          path='dashboard'
+          element={<Dashboard />}
         /> 
       </Routes>
     </BrowserRouter>

@@ -75,7 +75,7 @@ function Signup({ onLogin }) {
         label="Full Name"
         placeholder="enter full name"
         onChange={(e) => setFullName(e.target.value)}
-        variant="outlined"
+        variant="filled"
         style={textFieldStyle}
         fullWidth
         required
@@ -96,7 +96,7 @@ function Signup({ onLogin }) {
         label="Phone"
         placeholder="enter full name"
         onChange={(e) => setPhone(e.target.value)}
-        variant="outlined"
+        variant="filled"
         style={textFieldStyle}
         fullWidth
         required
@@ -116,7 +116,7 @@ function Signup({ onLogin }) {
         label="Email"
         placeholder="enter email"
         onChange={(e) => setEmail(e.target.value)}
-        variant="outlined"
+        variant="filled"
         style={textFieldStyle}
         fullWidth
         required
@@ -138,7 +138,7 @@ function Signup({ onLogin }) {
         placeholder="enter password"
         type="password"
         onChange={(e) => setPassword(e.target.value)}
-        variant="outlined"
+        variant="filled"
         style={textFieldStyle}
         fullWidth
         required
@@ -159,7 +159,7 @@ function Signup({ onLogin }) {
         placeholder="enter password"
         type="password"
         onChange={(e) => setPasswordConfirmation(e.target.value)}
-        variant="outlined"
+        variant="filled"
         style={textFieldStyle}
         fullWidth
         required

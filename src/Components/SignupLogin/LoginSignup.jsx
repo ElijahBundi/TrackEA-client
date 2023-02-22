@@ -38,7 +38,7 @@ function LoginSignup({ onLogin }) {
     padding: 20,
     margin: "100px 0px",
     height: 650,
-    width: 500,
+    width: "60%",
   };
 
   return (
@@ -54,6 +54,7 @@ function LoginSignup({ onLogin }) {
         sx={{
           color: "#feb06a",
           fontSize: "18px",
+          padding: "10px 0px"
         }}
       >
         <Typography variant="h6" noWrap component="div">
@@ -85,7 +86,7 @@ function LoginSignup({ onLogin }) {
         >
           <Box
             sx={{
-              width: 500,
+              width: "100%",
             }}
           >
             <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
