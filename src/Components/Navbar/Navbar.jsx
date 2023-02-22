@@ -165,7 +165,7 @@ function NavBar() {
             paddingTop: 10,
             justifyContent: "center",
             alignItems: "left",
-            height: { sm: "auto", lg: "70vh" },
+            height: "60vh",
           }}
         >
           <Box>
