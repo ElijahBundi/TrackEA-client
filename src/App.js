@@ -11,6 +11,7 @@ import LoginSignup from "./Components/SignupLogin/LoginSignup";
 import Signup from "./Components/SignupLogin/Signup";
 import SideBar from "./Components/Dashboard/SideBar";
 import TopBar from "./Components/Dashboard/TopBar";
+import Team from "./Components/Dashboard/Team";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -30,6 +31,7 @@ function App() {
                 <Route path="signup" element={<Signup />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="dashboard/sidebar" element={<SideBar />} />
+                <Route path="dashboard/team" element={<Team />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
