@@ -1,12 +1,16 @@
-import React from 'react'
-import { Sidebar } from 'react-pro-sidebar'
-import TopBar from './TopBar'
+import { Box } from "@mui/material";
+import React from "react";
+import { Sidebar } from "react-pro-sidebar";
+import TopBar from "./TopBar";
 
 function Dashboard() {
   return (
-    <Sidebar />
-    <TopBar />
-  )
+    <Box display='flex'>
+      <Sidebar />
+      <TopBar />
+        
+    </Box>
+  );
 }
 
-export default Dashboard
+export default Dashboard;

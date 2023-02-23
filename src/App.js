@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { ProSidebarProvider } from "react-pro-sidebar";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Dashboard from "./Components/Dashboard/Dashboard";
@@ -8,27 +9,32 @@ import Carousel from "./Components/SignupLogin/Carousel";
 import Login from "./Components/SignupLogin/Login";
 import LoginSignup from "./Components/SignupLogin/LoginSignup";
 import Signup from "./Components/SignupLogin/Signup";
+import SideBar from "./Components/Dashboard/SideBar";
+import TopBar from "./Components/Dashboard/TopBar";
 
 function App() {
   const [theme, colorMode] = useMode();
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <main className="content">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="login" element={<LoginSignup />} />
-              <Route path="carousel" element={<Carousel />} />
-              <Route path="login1" element={<Login />} />
-              <Route path="signup" element={<Signup />} />
-              <Route path="dashboard" element={<Dashboard />} />
-            </Routes>
-          </BrowserRouter>
-        </main>
-      </ThemeProvider>
+      <ProSidebarProvider>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          {/* <main className="content"> */}
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="login" element={<LoginSignup />} />
+                <Route path="carousel" element={<Carousel />} />
+                <Route path="login1" element={<Login />} />
+                <Route path="signup" element={<Signup />} />
+                <Route path="dashboard" element={<Dashboard />} />
+                <Route path="dashboard/sidebar" element={<SideBar />} />
+              </Routes>
+            </BrowserRouter>
+          {/* </main> */}
+        </ThemeProvider>
+      </ProSidebarProvider>
     </ColorModeContext.Provider>
   );
 }
