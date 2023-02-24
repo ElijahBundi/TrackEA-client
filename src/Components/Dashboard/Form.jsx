@@ -35,10 +35,7 @@ function Form() {
     address: yup.string().required("required"),
     password: yup
       .string()
-      .min(
-        8,
-        "Password is too short - should be 8 chars minimum"
-      )
+      .min(8, "Password is too short - should be 8 chars minimum")
       .required("required"),
     passwordConfirmation: yup
       .string()
@@ -182,6 +179,11 @@ function Form() {
                   gridColumn: "span 2",
                 }}
               />
+            </Box>
+            <Box display="flex" justifyContent="end" mt="20px">
+              <Button type="submit" color="secondary" variant="contained">
+                Create New User
+              </Button>
             </Box>
           </form>
         )}
