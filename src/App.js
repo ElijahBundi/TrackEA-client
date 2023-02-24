@@ -14,6 +14,7 @@ import TopBar from "./Components/Dashboard/TopBar";
 import Team from "./Components/Dashboard/Team";
 import Contacts from "./Components/Dashboard/Contacts";
 import Invoices from "./Components/Dashboard/Invoices";
+import Form from "./Components/Dashboard/Form";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -36,6 +37,7 @@ function App() {
                 <Route path="dashboard/team" element={<Team />} />
                 <Route path="dashboard/contacts" element={<Contacts />} />
                 <Route path="dashboard/invoices" element={<Invoices />} />
+                <Route path="dashboard/form" element={<Form />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
