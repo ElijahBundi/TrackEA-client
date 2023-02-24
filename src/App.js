@@ -13,6 +13,7 @@ import SideBar from "./Components/Dashboard/SideBar";
 import TopBar from "./Components/Dashboard/TopBar";
 import Team from "./Components/Dashboard/Team";
 import Contacts from "./Components/Dashboard/Contacts";
+import Invoices from "./Components/Dashboard/Invoices";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -34,6 +35,7 @@ function App() {
                 <Route path="dashboard/sidebar" element={<SideBar />} />
                 <Route path="dashboard/team" element={<Team />} />
                 <Route path="dashboard/contacts" element={<Contacts />} />
+                <Route path="dashboard/invoices" element={<Invoices />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
