@@ -17,7 +17,9 @@ import Invoices from "./Components/Dashboard/Invoices";
 import Form from "./Components/Dashboard/Form";
 import Calendar from "./Components/Dashboard/Calendar";
 import Faq from "./Components/Dashboard/Faq";
-import BarChart from "./Components/Dashboard/BarChart";
+import BarChart from "./Components/utils/BarChart";
+import Bar from "./Components/Dashboard/Bar";
+import Pie from "./Components/Dashboard/Pie";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -43,7 +45,8 @@ function App() {
                 <Route path="dashboard/form" element={<Form />} />
                 <Route path="dashboard/calendar" element={<Calendar />} />
                 <Route path="dashboard/faq" element={<Faq />} />
-                <Route path="dashboard/barchart" element={<BarChart />} />
+                <Route path="dashboard/bar" element={<Bar />} />
+                <Route path="dashboard/pie" element={<Pie />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}

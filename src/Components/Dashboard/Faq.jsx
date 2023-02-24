@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, useTheme, Typography } from "@mui/material";
-import Header from "./Header";
+import Header from "../utils/Header";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";

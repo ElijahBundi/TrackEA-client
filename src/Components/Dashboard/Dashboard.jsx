@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { Sidebar } from "react-pro-sidebar";
-import Header from "./Header";
+import Header from "../utils/Header";
 import TopBar from "./TopBar";
 
 function Dashboard() {

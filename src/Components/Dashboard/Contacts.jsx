@@ -3,7 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataContacts } from "../../Data/mockData";
-import Header from "./Header";
+import Header from "../utils/Header";
 
 function Contacts() {
   const theme = useTheme();

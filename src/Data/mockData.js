@@ -239,3 +239,309 @@ export const mockBarData = [
     donutColor: "hsl(310, 70%, 50%)",
   },
 ];
+
+export const mockPieData = [
+  {
+    id: "elixir",
+    label: "elixir",
+    value: 280,
+    color: "hsl(149, 70%, 50%)",
+  },
+  {
+    id: "haskell",
+    label: "haskell",
+    value: 373,
+    color: "hsl(184, 70%, 50%)",
+  },
+  {
+    id: "ruby",
+    label: "ruby",
+    value: 511,
+    color: "hsl(154, 70%, 50%)",
+  },
+  {
+    id: "erlang",
+    label: "erlang",
+    value: 319,
+    color: "hsl(28, 70%, 50%)",
+  },
+  {
+    id: "java",
+    label: "java",
+    value: 539,
+    color: "hsl(329, 70%, 50%)",
+  },
+];
+
+export const mockLineData = [
+  {
+    id: "japan",
+    color: "hsl(327, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 32,
+      },
+      {
+        x: "helicopter",
+        y: 264,
+      },
+      {
+        x: "boat",
+        y: 174,
+      },
+      {
+        x: "train",
+        y: 122,
+      },
+      {
+        x: "subway",
+        y: 67,
+      },
+      {
+        x: "bus",
+        y: 282,
+      },
+      {
+        x: "car",
+        y: 186,
+      },
+      {
+        x: "moto",
+        y: 32,
+      },
+      {
+        x: "bicycle",
+        y: 18,
+      },
+      {
+        x: "horse",
+        y: 121,
+      },
+      {
+        x: "skateboard",
+        y: 95,
+      },
+      {
+        x: "others",
+        y: 191,
+      },
+    ],
+  },
+  {
+    id: "france",
+    color: "hsl(242, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 133,
+      },
+      {
+        x: "helicopter",
+        y: 191,
+      },
+      {
+        x: "boat",
+        y: 227,
+      },
+      {
+        x: "train",
+        y: 131,
+      },
+      {
+        x: "subway",
+        y: 234,
+      },
+      {
+        x: "bus",
+        y: 49,
+      },
+      {
+        x: "car",
+        y: 242,
+      },
+      {
+        x: "moto",
+        y: 116,
+      },
+      {
+        x: "bicycle",
+        y: 39,
+      },
+      {
+        x: "horse",
+        y: 26,
+      },
+      {
+        x: "skateboard",
+        y: 21,
+      },
+      {
+        x: "others",
+        y: 163,
+      },
+    ],
+  },
+  {
+    id: "us",
+    color: "hsl(117, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 199,
+      },
+      {
+        x: "helicopter",
+        y: 81,
+      },
+      {
+        x: "boat",
+        y: 298,
+      },
+      {
+        x: "train",
+        y: 180,
+      },
+      {
+        x: "subway",
+        y: 138,
+      },
+      {
+        x: "bus",
+        y: 46,
+      },
+      {
+        x: "car",
+        y: 68,
+      },
+      {
+        x: "moto",
+        y: 120,
+      },
+      {
+        x: "bicycle",
+        y: 157,
+      },
+      {
+        x: "horse",
+        y: 97,
+      },
+      {
+        x: "skateboard",
+        y: 113,
+      },
+      {
+        x: "others",
+        y: 89,
+      },
+    ],
+  },
+  {
+    id: "germany",
+    color: "hsl(219, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 271,
+      },
+      {
+        x: "helicopter",
+        y: 67,
+      },
+      {
+        x: "boat",
+        y: 242,
+      },
+      {
+        x: "train",
+        y: 130,
+      },
+      {
+        x: "subway",
+        y: 90,
+      },
+      {
+        x: "bus",
+        y: 26,
+      },
+      {
+        x: "car",
+        y: 36,
+      },
+      {
+        x: "moto",
+        y: 95,
+      },
+      {
+        x: "bicycle",
+        y: 12,
+      },
+      {
+        x: "horse",
+        y: 71,
+      },
+      {
+        x: "skateboard",
+        y: 123,
+      },
+      {
+        x: "others",
+        y: 87,
+      },
+    ],
+  },
+  {
+    id: "norway",
+    color: "hsl(94, 70%, 50%)",
+    data: [
+      {
+        x: "plane",
+        y: 33,
+      },
+      {
+        x: "helicopter",
+        y: 138,
+      },
+      {
+        x: "boat",
+        y: 239,
+      },
+      {
+        x: "train",
+        y: 209,
+      },
+      {
+        x: "subway",
+        y: 44,
+      },
+      {
+        x: "bus",
+        y: 57,
+      },
+      {
+        x: "car",
+        y: 37,
+      },
+      {
+        x: "moto",
+        y: 168,
+      },
+      {
+        x: "bicycle",
+        y: 9,
+      },
+      {
+        x: "horse",
+        y: 26,
+      },
+      {
+        x: "skateboard",
+        y: 259,
+      },
+      {
+        x: "others",
+        y: 97,
+      },
+    ],
+  },
+];
