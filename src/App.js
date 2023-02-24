@@ -16,6 +16,8 @@ import Contacts from "./Components/Dashboard/Contacts";
 import Invoices from "./Components/Dashboard/Invoices";
 import Form from "./Components/Dashboard/Form";
 import Calendar from "./Components/Dashboard/Calendar";
+import Faq from "./Components/Dashboard/Faq";
+import BarChart from "./Components/Dashboard/BarChart";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -40,6 +42,8 @@ function App() {
                 <Route path="dashboard/invoices" element={<Invoices />} />
                 <Route path="dashboard/form" element={<Form />} />
                 <Route path="dashboard/calendar" element={<Calendar />} />
+                <Route path="dashboard/faq" element={<Faq />} />
+                <Route path="dashboard/barchart" element={<BarChart />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
