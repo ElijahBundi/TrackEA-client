@@ -54,7 +54,10 @@ function Contacts() {
 
   return (
     <Box m="20px">
-      <Header title="CONTACTS" subtitle="List of Contacts for future reference" />
+      <Header
+        title="CONTACTS"
+        subtitle="List of Contacts for future reference"
+      />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -79,12 +82,16 @@ function Contacts() {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
           },
-          '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
-            color: `${colors.grey[100]} !important`
-          }
+          "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
+            color: `${colors.grey[100]} !important`,
+          },
         }}
       >
-        <DataGrid rows={mockDataContacts} columns={columns} />
+        <DataGrid
+          rows={mockDataContacts}
+          columns={columns}
+          components={{ Toolbar: GridToolbar }}
+        />
       </Box>
     </Box>
   );
