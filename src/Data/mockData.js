@@ -88,3 +88,47 @@ export const mockDataContacts = [
         licenseNumber: 123452
     },
 ]
+
+
+export const mockDataInvoices = [
+    {
+        id: 1,
+        name: "Jon Snow",
+        email: "jonsnow@gmail.com",
+        phone: "0701121212",
+        cost: "999.99",
+        date: '01/10/2022',
+    },
+    {
+        id: 2,
+        name: "John Doe",
+        email: "johndoe@gmail.com",
+        phone: "0701232323",
+        cost: "100.50",
+        date: '03/12/2021',
+    },
+    {
+        id: 3,
+        name: "Mary Jane",
+        email: "maryjane@gmail.com",
+        phone: "0701343434",
+        cost: "532.20",
+        date: '03/12/2022',
+    },
+    {
+        id: 4,
+        name: "Teddy Small",
+        email: "teddysmall@gmail.com",
+        phone: "0701454545",
+        cost: "450.50",
+        date: '03/11/2022',
+    },
+    {
+        id: 5,
+        name: "Peter Salasya",
+        email: "petersalasya@gmail.com",
+        phone: "0701565656",
+        cost: "699.99",
+        date: '05/12/2022',
+    },
+]
