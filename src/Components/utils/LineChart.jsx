@@ -4,7 +4,7 @@ import { mockLineData as data } from '../../Data/mockData';
 import { useTheme } from '@mui/material';
 import { tokens } from '../../theme';
 
-function LineChart() {
+function LineChart({ isDashboard = false }) {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode)
 
@@ -12,8 +12,39 @@ function LineChart() {
     <ResponsiveLine
         data={data}
         theme={{
-            
+            axis: {
+                domain: {
+                    line: {
+                        stroke: colors.grey[100]
+                    }
+                },
+                legend: {
+                    text: {
+                        fill: colors.grey[100]
+                    }
+                },
+                ticks: {
+                    line: {
+                        stroke: colors.grey[100],
+                        strokeWidth: 1
+                    },
+                    text: {
+                        fill: colors.grey[100]
+                    }
+                }
+            },
+            legends: {
+                text: {
+                    fill: colors.grey[100]
+                }
+            },
+            tooltip: {
+                container: {
+                    color: colors.primary[500]
+                }
+            }
         }}
+        colors ={isDashboard ? { datum: 'color' } : { scheme: 'nivo' }}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{
@@ -32,16 +63,17 @@ function LineChart() {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'transportation',
+            legend: isDashboard ? undefined : 'transportation',
             legendOffset: 36,
             legendPosition: 'middle'
         }}
         axisLeft={{
             orient: 'left',
+            tickValues: 5,
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'count',
+            legend: isDashboard ? undefined : 'count',
             legendOffset: -40,
             legendPosition: 'middle'
         }}

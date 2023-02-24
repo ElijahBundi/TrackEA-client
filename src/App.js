@@ -20,6 +20,7 @@ import Faq from "./Components/Dashboard/Faq";
 import BarChart from "./Components/utils/BarChart";
 import Bar from "./Components/Dashboard/Bar";
 import Pie from "./Components/Dashboard/Pie";
+import Line from "./Components/Dashboard/Line";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -47,6 +48,7 @@ function App() {
                 <Route path="dashboard/faq" element={<Faq />} />
                 <Route path="dashboard/bar" element={<Bar />} />
                 <Route path="dashboard/pie" element={<Pie />} />
+                <Route path="dashboard/line" element={<Line />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
