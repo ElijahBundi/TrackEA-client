@@ -21,6 +21,7 @@ import BarChart from "./Components/utils/BarChart";
 import Bar from "./Components/Dashboard/Bar";
 import Pie from "./Components/Dashboard/Pie";
 import Line from "./Components/Dashboard/Line";
+import Geography from "./Components/Dashboard/Geography";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -49,6 +50,7 @@ function App() {
                 <Route path="dashboard/bar" element={<Bar />} />
                 <Route path="dashboard/pie" element={<Pie />} />
                 <Route path="dashboard/line" element={<Line />} />
+                <Route path="dashboard/geography" element={<Geography />} />
               </Routes>
             </BrowserRouter>
           {/* </main> */}
