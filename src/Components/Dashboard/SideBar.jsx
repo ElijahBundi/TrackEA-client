@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem , useProSidebar } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -42,6 +42,7 @@ function SideBar() {
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
+  const { collapseSidebar } = useProSidebar();
 
   return (
     <Box
@@ -63,7 +64,7 @@ function SideBar() {
         },
       }}
     >
-      <Sidebar collapsed={isCollapsed}>
+      <Sidebar onClick={() => collapseSidebar()}>
         <Menu iconShape="square">
           {/* LOGO & MENU ICON */}
           <MenuItem
@@ -228,7 +229,6 @@ function SideBar() {
           </Box>
         </Menu>
       </Sidebar>
-      <TopBar />
     </Box>
   );
 }

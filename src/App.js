@@ -31,8 +31,10 @@ function App() {
       <ProSidebarProvider>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          {/* <main className="content"> */}
-            <BrowserRouter>
+          <div className="app">
+            <SideBar />
+            <main className="content">
+              <TopBar />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="login" element={<LoginSignup />} />
@@ -52,8 +54,8 @@ function App() {
                 <Route path="dashboard/line" element={<Line />} />
                 <Route path="dashboard/geography" element={<Geography />} />
               </Routes>
-            </BrowserRouter>
-          {/* </main> */}
+            </main>
+          </div>
         </ThemeProvider>
       </ProSidebarProvider>
     </ColorModeContext.Provider>
