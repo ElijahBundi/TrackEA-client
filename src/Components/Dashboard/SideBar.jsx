@@ -32,7 +32,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       icon={icon}
     >
       <Typography>{title}</Typography>
-      <Link to={to} />
+      {/* <Link to={to} /> */}
     </MenuItem>
   );
 };
@@ -64,11 +64,11 @@ function SideBar() {
         },
       }}
     >
-      <Sidebar onClick={() => collapseSidebar()}>
+      <Sidebar >
         <Menu iconShape="square">
           {/* LOGO & MENU ICON */}
           <MenuItem
-            onClick={() => setIsCollapsed(!isCollapsed)}
+            onClick={() => { setIsCollapsed(!isCollapsed); collapseSidebar() }}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
@@ -85,7 +85,7 @@ function SideBar() {
                 <Typography variant="h3" color={colors.grey[100]}>
                   TRACKEA
                 </Typography>
-                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                <IconButton onClick={() => (setIsCollapsed(!isCollapsed))}>
                   <MenuOutlinedIcon />
                 </IconButton>
               </Box>
