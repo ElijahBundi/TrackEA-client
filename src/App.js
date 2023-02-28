@@ -52,7 +52,7 @@ function App() {
                 <Route path="dashboard/bar" element={<Bar />} />
                 <Route path="dashboard/pie" element={<Pie />} />
                 <Route path="dashboard/line" element={<Line />} />
-                <Route path="dashboard/geography" element={<Geography />} />
+                <Route path="dashboard/map" element={<Geography />} />
               </Routes>
             </main>
           </div>

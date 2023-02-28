@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem , useProSidebar } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -64,11 +64,14 @@ function SideBar() {
         },
       }}
     >
-      <Sidebar >
+      <Sidebar>
         <Menu iconShape="square">
           {/* LOGO & MENU ICON */}
           <MenuItem
-            onClick={() => { setIsCollapsed(!isCollapsed); collapseSidebar() }}
+            onClick={() => {
+              setIsCollapsed(!isCollapsed);
+              collapseSidebar();
+            }}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
@@ -85,7 +88,7 @@ function SideBar() {
                 <Typography variant="h3" color={colors.grey[100]}>
                   TRACKEA
                 </Typography>
-                <IconButton onClick={() => (setIsCollapsed(!isCollapsed))}>
+                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
                 </IconButton>
               </Box>
@@ -126,14 +129,13 @@ function SideBar() {
           )}
 
           {/* MENU ITEMS */}
-          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-            <Item
-              title="Dashboard"
-              to="/"
+          <main paddingLeft={isCollapsed ? undefined : "10%"}>
+            <MenuItem
               icon={<HomeOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+              component={<Link to="/dashboard" />}
+            >
+              Dashboard
+            </MenuItem>
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -142,27 +144,24 @@ function SideBar() {
               Data
             </Typography>
 
-            <Item
-              title="Manage Team"
-              to="/team"
+            <MenuItem
               icon={<PeopleOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Contacts Information"
-              to="/contacts"
+              component={<Link to="dashboard/team" />}
+            >
+              Manage Team
+            </MenuItem>
+            <MenuItem
               icon={<ContactsOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Invoices Balances"
-              to="/invoices"
+              component={<Link to="dashboard/contacts" />}
+            >
+              Contact Information
+            </MenuItem>
+            <MenuItem
               icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+              component={<Link to="dashboard/invoices" />}
+            >
+              Invoices Balances
+            </MenuItem>
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -170,27 +169,24 @@ function SideBar() {
             >
               Pages
             </Typography>
-            <Item
-              title="Profile Form"
-              to="/form"
+            <MenuItem
               icon={<PersonOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Calendar"
-              to="/calendar"
+              component={<Link to="dashboard/form" />}
+            >
+              Profile Form
+            </MenuItem>
+            <MenuItem
               icon={<CalendarTodayOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="FAQ Page"
-              to="/faq"
+              component={<Link to="dashboard/calendar" />}
+            >
+              Calendar
+            </MenuItem>
+            <MenuItem
               icon={<HelpOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+              component={<Link to="dashboard/faq" />}
+            >
+              FAQ Page
+            </MenuItem>
             <Typography
               variant="h6"
               color={colors.grey[300]}
@@ -198,35 +194,31 @@ function SideBar() {
             >
               Charts
             </Typography>
-            <Item
-              title="BarChart"
-              to="/bar"
+            <MenuItem
               icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Pie Chart"
-              to="/pie"
+              component={<Link to="dashboard/bar" />}
+            >
+              Bar Chart
+            </MenuItem>
+            <MenuItem
               icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Line Chart"
-              to="/line"
+              component={<Link to="dashboard/pie" />}
+            >
+              Pie Chart
+            </MenuItem>
+            <MenuItem
               icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
+              component={<Link to="dashboard/line" />}
+            >
+              Line Chart
+            </MenuItem>
+            <MenuItem
               icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-          </Box>
+              component={<Link to="dashboard/map" />}
+            >
+              Geography Chart
+            </MenuItem>
+          </main>
         </Menu>
       </Sidebar>
     </Box>
