@@ -9,6 +9,10 @@ function DashboardRow2() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  const dataFormatter = (number) => {
+    return "Ksh " + Intl.NumberFormat("KE").format(number);
+  };
+
   return (
     <>
       {/* REVENUE GENERATED */}
@@ -33,7 +37,7 @@ function DashboardRow2() {
               fontWeight="bold"
               color={colors.greenAccent[500]}
             >
-              Ksh 59,342,245
+              {dataFormatter(59342245)}
             </Typography>
           </Box>
 
@@ -100,7 +104,7 @@ function DashboardRow2() {
               p="5px 10px"
               borderRadius="4px"
             >
-              Ksh{transaction.cost}
+              {dataFormatter(transaction.cost)}
             </Box>
           </Box>
         ))}

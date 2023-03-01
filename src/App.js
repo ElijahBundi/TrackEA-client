@@ -22,39 +22,48 @@ import Bar from "./Components/Dashboard/Bar";
 import Pie from "./Components/Dashboard/Pie";
 import Line from "./Components/Dashboard/Line";
 import Geography from "./Components/Dashboard/Geography";
+import { useState } from "react";
 
 function App() {
   const [theme, colorMode] = useMode();
+  const selected = "Dashboard";
 
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ProSidebarProvider>
         <ThemeProvider theme={theme}>
           <CssBaseline />
+
           <div className="app">
             <SideBar />
             <main className="content">
               <TopBar />
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="login" element={<LoginSignup />} />
-                <Route path="carousel" element={<Carousel />} />
-                <Route path="login1" element={<Login />} />
-                <Route path="signup" element={<Signup />} />
-                <Route path="dashboard" element={<Dashboard />} />
-                <Route path="dashboard/sidebar" element={<SideBar />} />
-                <Route path="dashboard/team" element={<Team />} />
-                <Route path="dashboard/contacts" element={<Contacts />} />
-                <Route path="dashboard/invoices" element={<Invoices />} />
-                <Route path="dashboard/form" element={<Form />} />
-                <Route path="dashboard/calendar" element={<Calendar />} />
-                <Route path="dashboard/faq" element={<Faq />} />
-                <Route path="dashboard/bar" element={<Bar />} />
-                <Route path="dashboard/pie" element={<Pie />} />
-                <Route path="dashboard/line" element={<Line />} />
-                <Route path="dashboard/map" element={<Geography />} />
+                <Route>
+                  <Route path="dashboard" element={<Dashboard />} />
+                  <Route path="dashboard/sidebar" element={<SideBar />} />
+                  <Route path="dashboard/team" element={<Team />} />
+                  <Route path="dashboard/contacts" element={<Contacts />} />
+                  <Route path="dashboard/invoices" element={<Invoices />} />
+                  <Route path="dashboard/form" element={<Form />} />
+                  <Route path="dashboard/calendar" element={<Calendar />} />
+                  <Route path="dashboard/faq" element={<Faq />} />
+                  <Route path="dashboard/bar" element={<Bar />} />
+                  <Route path="dashboard/pie" element={<Pie />} />
+                  <Route path="dashboard/line" element={<Line />} />
+                  <Route path="dashboard/map" element={<Geography />} />
+                </Route>
               </Routes>
             </main>
+          </div>
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login" element={<LoginSignup />} />
+              <Route path="carousel" element={<Carousel />} />
+              <Route path="login1" element={<Login />} />
+              <Route path="signup" element={<Signup />} />
+            </Routes>
           </div>
         </ThemeProvider>
       </ProSidebarProvider>

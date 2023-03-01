@@ -41,7 +41,7 @@ function SideBar() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
+  const selected = "Dashboard";
   const { collapseSidebar } = useProSidebar();
 
   return (
@@ -85,7 +85,7 @@ function SideBar() {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
+                <Typography variant="h3" sx={{ color: '#feb06a', fontWeight: 'bold' }}>
                   TRACKEA
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -132,7 +132,7 @@ function SideBar() {
           <main paddingLeft={isCollapsed ? undefined : "10%"}>
             <MenuItem
               icon={<HomeOutlinedIcon />}
-              component={<Link to="/dashboard" />}
+              component={<Link to={selected} />}
             >
               Dashboard
             </MenuItem>

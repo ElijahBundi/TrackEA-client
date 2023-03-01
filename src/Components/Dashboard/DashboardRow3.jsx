@@ -8,6 +8,10 @@ import ProgressCircle from "../utils/ProgressCircle";
 function DashboardRow3() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  
+  const dataFormatter = (number) => {
+    return "Ksh " + Intl.NumberFormat("KE").format(number);
+  };
 
   return (
     <>
@@ -35,7 +39,7 @@ function DashboardRow3() {
               mt: "15px",
             }}
           >
-            Ksh 4,835,200 revenue generated
+            {dataFormatter(4835200)} revenue generated
           </Typography>
           <Typography>
             Includes extra miscellaneous expenditures and costs
